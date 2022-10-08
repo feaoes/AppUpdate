@@ -37,8 +37,7 @@ import com.vector.update_app.service.DownloadService;
 import com.vector.update_app.utils.AppUpdateUtils;
 import com.vector.update_app.utils.ColorUtil;
 import com.vector.update_app.utils.DrawableUtil;
-import com.vector.update_app.view.NumberProgressBar;
-
+import com.daimajia.numberprogressbar.NumberProgressBar;
 import java.io.File;
 
 /**
@@ -267,12 +266,12 @@ public class UpdateDialogFragment extends DialogFragment implements View.OnClick
      * @param topResId 图片
      */
     private void setDialogTheme(int color, int topResId) {
-        mTopIv.setImageResource(topResId);
-        mUpdateOkButton.setBackgroundDrawable(DrawableUtil.getDrawable(AppUpdateUtils.dip2px(4, getActivity()), color));
+//        mTopIv.setImageResource(topResId);
+//        mUpdateOkButton.setBackgroundDrawable(DrawableUtil.getDrawable(AppUpdateUtils.dip2px(4, getActivity()), color));
         mNumberProgressBar.setProgressTextColor(color);
         mNumberProgressBar.setReachedBarColor(color);
         //随背景颜色变化
-        mUpdateOkButton.setTextColor(ColorUtil.isTextColorDark(color) ? Color.BLACK : Color.WHITE);
+//        mUpdateOkButton.setTextColor(ColorUtil.isTextColorDark(color) ? Color.BLACK : Color.WHITE);
     }
 
     private void initEvents() {
